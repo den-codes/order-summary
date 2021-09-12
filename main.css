@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }:root{
     --primary-color: rgb(80, 80, 80);
-    --main-color: #2541B2; /*Denim Blue*/
+    --main-color: hsl(245, 75%, 52%); /*Denim Blue*/
     --light-color: #EBF1FE; /*Alice Blue*/
     --light-blue: #C5D6FC;
     --links: #3454D5;
@@ -16,7 +16,6 @@
     /*font and typography*/
     --body-font:'Poppins', sans-serif;
 
-        /*.5rem = 8px, 1rem = 16px, 1.5rem = 24px .75= 12px*/
     --big-font-size:2rem;
     --h1-font-size:1.5rem;
     --h2-font-size:1.25rem;
@@ -35,10 +34,11 @@ body{
 
     background-image: url(./img/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .container{
     width: 380px;
-    height: 100vh;
+    height: 80vh;
     display: flexbox;
     flex-direction: column;
 
@@ -46,7 +46,7 @@ body{
     justify-content: center;
     margin:auto;
 
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 3%;
 
     background-color: #FFFFFF;
@@ -56,23 +56,27 @@ body{
 }
 img{
     width: 380px;
-    height: 150px;
+    height: 180px;
 
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-.plan {
-    font-weight: var(--font-semi-bold);
-    color: var(--main-color) !important;
-    margin-left: 18%;
+.plan{
+    margin-left: 8%;
 }
-a{
+.plan h3{
+    font-weight: var(--font-semi-bold);
+    color: black !important;
+    margin-left: 5%;
+    margin-bottom: -32%;
+    font-size: var(--normal-font-size);
+}
+.info-plan a{
     margin-left: 10%;
 }
 p, i, .cancel{
     color: var(--primary-color);
 }
-
 .info h1, p{
     margin: 5% 10% 5% 10%;
      text-align: center;
@@ -89,6 +93,9 @@ p, i, .cancel{
     border-radius: 10px;
 
     background-color: var(--light-color);
+}
+.info-plan p{
+    margin-left: 5%;
 }
 i{
     padding: 25% 10px 25% 15px;
@@ -107,7 +114,6 @@ i{
 .button{
     display: flex;
     flex-direction: column;
-
 
     margin: 20px auto auto auto;
     align-items: center;
@@ -136,6 +142,12 @@ input{
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
 }
+footer{
+    transform: translate(37%);
+}
+footer, h5, a{
+    font-weight: 100;
+}
 @media only screen and (max-width: 800px) {
     .container{
         width: 380px;
@@ -151,7 +163,7 @@ input{
         margin-bottom: 10%;
         background-color: #FFFFFF;
         border-radius: 15px;
-        box-shadow: 2px 2px 20px 2px var(--primary-color);
+        box-shadow: 2px 2px 20px 2px var(--light-blue);
     }
     img{
         width: 380px;
@@ -245,7 +257,7 @@ input{
         margin-bottom: 10%;
         background-color: #FFFFFF;
         border-radius: 15px;
-        box-shadow: 2px 2px 20px 2px var(--primary-color);
+        box-shadow: 2px 2px 20px 2px var(--light-blue);
     }
     img{
         width: 380px;
